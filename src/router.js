@@ -20,18 +20,18 @@ const router = createBrowserRouter(
             path='/' 
             element={<App/>}
         >
-            <Route
-                path=''
-                element={<Main/>}
-            />  
-            <Route
-                path='currencies'
-                element={<Currencies/>}
-            />
-            <Route
-                path='price'
-                element={<Price/>}
-            />
+                <Route
+                    path=''
+                    element={<Main/>}
+                />  
+                <Route
+                    path='currencies'
+                    element={<Currencies/>}
+                />
+                <Route
+                    path='price'
+                    element={<Price/>}
+                />
         </Route>
         </>
     )
