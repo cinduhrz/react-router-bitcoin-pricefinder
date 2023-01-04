@@ -8,6 +8,7 @@ import App from './App'
 import Main from './pages/main'
 import Currencies from './pages/currencies'
 import Price from './pages/price'
+import { priceLoader } from './loaders'
 
 // create the browser router
 // this method is ALWAYS first
@@ -31,6 +32,8 @@ const router = createBrowserRouter(
                 <Route
                     path='price/:symbol'
                     element={<Price/>}
+                    // loaders understand Fetch Responses and will automatically unwrap the res.json(), so you can simply return a fetch
+                    loader={priceLoader}
                 />
         </Route>
         </>
