@@ -1,5 +1,3 @@
-// import React from "react";
-
 // essentially an a tag but makes use of react router's method
 import { Link } from "react-router-dom";
 

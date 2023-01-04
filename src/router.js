@@ -29,7 +29,7 @@ const router = createBrowserRouter(
                     element={<Currencies/>}
                 />
                 <Route
-                    path='price'
+                    path='price/:symbol'
                     element={<Price/>}
                 />
         </Route>
