@@ -1,5 +1,5 @@
-// containers helper function
-// params is anything on the url, it is an object containing the url params as keys
+// contains helper function
+// params is an object containing the url params as keys
 export const priceLoader = async ({params}) => {
     const symbol = params.symbol
     const apiKey = "DB44205B-FF32-4740-991C-9387A4BCE77D"
